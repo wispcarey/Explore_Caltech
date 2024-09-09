@@ -287,6 +287,14 @@
   aspect-ratio: 16/9;
   border-radius: var(--dl-radius-radius-imageradius);
 }
+.thq-img-ratio-16-9-large {
+  width: 120%; 
+  max-width: 100%; 
+  object-fit: cover;
+  aspect-ratio: 16/9; 
+  border-radius: var(--dl-radius-radius-imageradius); 
+  margin-bottom: var(--dl-space-space-unit);
+}
 .thq-img-ratio-4-3 {
   width: 100%;
   object-fit: cover;
