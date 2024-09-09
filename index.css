@@ -844,15 +844,21 @@
   font-family: 'Times New Roman', serif;
 }
 
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .map-content1 {
-    flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
   }
-
   .map-content2 {
-    padding-right: 0;
-    margin-bottom: var(--dl-space-space-threeunits);
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media(max-width: 767px) {
+  .map-content1 {
+    gap: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
   }
 }
 

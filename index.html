@@ -1,3 +1,12 @@
+<script>
+  document.querySelector('a[href="#Contact6"]').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#Contact6').scrollIntoView({
+          behavior: 'smooth'  // 使用平滑滚动行为
+      });
+  });
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -56,6 +65,15 @@
     />
   </head>
   <body>
+    <script>
+      function scrollToBottom() {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: 'smooth' // 平滑滚动
+        });
+      }
+    </script>
+
     <link rel="stylesheet" href="./style.css" />
     <div>
       <link href="./index.css" rel="stylesheet" />
@@ -84,9 +102,8 @@
                 class="home-nav1"
               >
                 <div class="home-right">
-                  <a href="#Contact6" class="home-link2">
+                  <a href="#" onclick="scrollToBottom(); return false;" class="home-link2">
                     <nav-links-wrapper class="home-nav-links">
-                      <!--NavLinks component-->
                       <div class="nav-links-links">
                         <span class="navLink"><span>Contact us</span></span>
                       </div>
@@ -96,36 +113,7 @@
                 </div>
               </nav>
             </div>
-            <div data-thq="thq-burger-menu" class="home-burger-menu">
-              <button class="home-work-with-us1 button">
-                <a href="#Contact6" class="home-text10">Contact Us</a>
-              </button>
-            </div>
 
-            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
-              <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="home-nav2">
-                <div class="home-top">
-                  <div class="home-branding2">
-                    <span class="home-text11">Explore Caltech</span>
-                  </div>
-                  <div data-thq="thq-close-menu" class="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="home-icon1">
-                      <path
-                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                            ></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="home-middle">
-                  <div class="home-links">
-                    <a href="#Contact6" class="navLink">Contact Us</a>
-                  </div>
-                  <button class="home-work-with-us2 button">
-                    <a href="#Contact6" class="home-text12">Contact Us</a>
-                  </button>
-                </nav>
-              </div>
-            </div>
           </header>
         </header>
         <h1 class="home-text13">
@@ -437,68 +425,44 @@
          </div>
         </section>
         
-        <contact6-wrapper class="contact6-wrapper">
-          <!--Contact6 component-->
-          <div id="Contact6" class="contact6-container thq-section-padding">
+        <!-- Contact Section -->
+        <section id="Contact6" class="contact6-wrapper">
+          <div class="contact6-container thq-section-padding">
             <div class="contact6-max-width thq-section-max-width">
               <div class="contact6-content1 thq-flex-row">
                 <div class="contact6-content2">
-                  <h2>
-                    <fragment class="home-fragment36">
-                      <span class="home-text62 thq-heading-2">Contact us</span>
-                    </fragment>
-                  </h2>
+                  <h2><span class="home-text62 thq-heading-2">Contact us</span></h2>
                   <p>
-                    <fragment class="home-fragment35">
-                      <span class="home-text56 thq-body-large">
-                        <span>
-                          Organizers:&nbsp;Bohan Chen, Marziye Jafariyazani, Matthew M.
-                          Gherman, Nivedita Mahesh
-                        </span>
-                      </span>
-                    </fragment>
+                    <span class="home-text56 thq-body-large">
+                      Organizers:&nbsp;Bohan Chen, Marziye Jafariyazani, Matthew M. Gherman, Nivedita Mahesh
+                    </span>
                   </p>
                 </div>
                 <div class="contact6-content3">
                   <div class="contact6-content4">
                     <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                      <path
-                            d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
-                            ></path>
+                      <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
                     </svg>
                     <div class="contact6-contact-info1">
                       <h3 class="contact6-text3 thq-heading-3">Email</h3>
-                      <span>
-                        <fragment class="home-fragment33">
-                          <span class="home-text54 thq-body-small">
-                            mgherman@caltech.edu
-                          </span>
-                        </fragment>
-                      </span>
+                      <span><span class="home-text54 thq-body-small">mgherman@caltech.edu</span></span>
                     </div>
                   </div>
                   <div class="contact6-content5">
                     <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                      <path
-                            d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
-                            ></path>
+                      <path d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"></path>
                     </svg>
                     <div class="contact6-contact-info2">
                       <h3 class="thq-heading-3">Webpage</h3>
-                      <span>
-                        <fragment class="home-fragment34">
-                          <span class="home-text55 thq-body-small">
-                            cpa.caltech.edu/
-                          </span>
-                        </fragment>
-                      </span>
+                      <span><span class="home-text55 thq-body-small">cpa.caltech.edu/</span></span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </contact6-wrapper>
+        </section>
+
         
       </div>
     </div>
@@ -508,3 +472,5 @@
     ></script>
   </body>
 </html>
+
+
