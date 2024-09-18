@@ -683,6 +683,146 @@
   justify-content: center;
 }
 
+.features26-wrapper {
+  display: contents;
+}
+
+.features26-container {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-space-space-tenunits); /* Increase grid gap */
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+
+.features26-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--dl-space-space-tenunits); /* Increase gap between columns */
+  width: 100%;
+}
+
+.features26-tab-horizontal1,
+.features26-tab-horizontal2,
+.features26-tab-horizontal3,
+.features26-tab-horizontal4,
+.features26-tab-horizontal5,
+.features26-tab-horizontal6 {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.features26-divider-container1,
+.features26-divider-container2,
+.features26-divider-container3,
+.features26-divider-container4,
+.features26-divider-container5,
+.features26-divider-container6 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+
+.features26-container3,
+.features26-container4,
+.features26-container5,
+.features26-container6,
+.features26-container7,
+.features26-container8 {
+  width: 2px;
+  align-self: stretch;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+
+.features26-content1,
+.features26-content2,
+.features26-content3,
+.features26-content4,
+.features26-content5,
+.features26-content6 {
+  gap: 16px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* Add padding to improve spacing */
+}
+
+@media (max-width: 991px) {
+  .features26-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TED-Style Talks Section */
+.combined-schedule-wrapper {
+  background-color: var(--dl-color-gray-white); /* Pure white background */
+  padding: var(--dl-space-space-fourunits) 0;
+}
+
+.combined-schedule-max-width {
+  max-width: var(--dl-size-size-maxwidth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.combined-schedule-header {
+  text-align: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+
+.combined-schedule-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  padding-left: 0;
+}
+
+.list-item {
+  margin-bottom: var(--dl-space-space-oneunit);
+  font-size: var(--dl-size-size-small);
+}
+
+/* Matching Heading Style from 'Explore Our Main Features' */
+.home-text40 {
+  color: var(--dl-color-theme-primary1); /* Same orange color as Explore Our Main Features */
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Orange color for the subtitle */
+.home-text-orange {
+  color: var(--dl-color-theme-primary2); /* Orange color for the subtitle */
+  font-size: 20px; /* Increase the font size slightly */
+  text-align: center;
+}
+
+@media(max-width: 767px) {
+  .combined-schedule-wrapper {
+    padding: var(--dl-space-space-oneandhalfunits);
+  }
+  .combined-schedule-list {
+    align-items: center;
+  }
+}
+
+
+
 .home-fragment27 {
   display: contents;
 }
@@ -799,6 +939,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 /* Map Section Styles */
 .map-section {
   width: 100%;
